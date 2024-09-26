@@ -90,6 +90,15 @@ enum AnalyticsEvent {
 
     }
 
+    /**
+     * freeeホーム画面 */
+    struct FreeeHomeScreen : AnalyticsEventScreen {
+
+      let eventName: String = "FreeeHomeScreen"
+      let isConversionEvent: Bool = true
+
+    }
+
   }
 
   /**
@@ -191,6 +200,11 @@ enum AnalyticsEvent {
     /**
      * テスト画面2 */
     struct Test2 {
+    }
+
+    /**
+     * freeeホーム画面 */
+    struct FreeeHomeScreen {
     }
 
   }
