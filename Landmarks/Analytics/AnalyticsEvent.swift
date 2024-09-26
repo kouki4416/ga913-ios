@@ -73,10 +73,19 @@ enum AnalyticsEvent {
     }
 
     /**
-     * テストログ */
-    struct Test : AnalyticsEventScreen {
+     * テスト画面1 */
+    struct Test1 : AnalyticsEventScreen {
 
-      let eventName: String = "Test"
+      let eventName: String = "Test1"
+      let isConversionEvent: Bool = true
+
+    }
+
+    /**
+     * テスト画面2 */
+    struct Test2 : AnalyticsEventScreen {
+
+      let eventName: String = "Test2"
       let isConversionEvent: Bool = true
 
     }
@@ -175,8 +184,13 @@ enum AnalyticsEvent {
     }
 
     /**
-     * テストログ */
-    struct Test {
+     * テスト画面1 */
+    struct Test1 {
+    }
+
+    /**
+     * テスト画面2 */
+    struct Test2 {
     }
 
   }
